@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "glyphology",
+	"version": "0.0.1+1.20.4",
+	"name": "Glyphology",
+	"description": "Expansive mod which adds plenty of magical glyphs to assist your Minecraft experience.",
+	"authors": [
+		"NivixZixer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nivix.glyphology.Glyphology"
+		],
+		"client": [
+			"nivix.glyphology.GlyphologyClient"
+		],
+		"fabric-datagen": [
+			"nivix.glyphology.GlyphologyDataGenerator"
+		]
+	},
+	"mixins": [
+		"glyphology.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
